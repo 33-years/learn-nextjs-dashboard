@@ -3,7 +3,7 @@
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 
-export default function Search(placeholder: string) {
+export default function Search({placeholder}:{placeholder:string} ) {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   // 解构赋值，调用useRouter对象,解构出replace方法.
